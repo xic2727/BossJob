@@ -63,7 +63,7 @@ class BossCrawler:
     async def get_jobs(self):
         await self.browser_init()
         if self.all_page is False:
-            self.max_page = 4
+            self.max_page = 3
             url_list = [self.url + str(page) for page in range(1, self.max_page + 1)]
         else:
             url_list = [self.url + str(page) for page in range(1, self.max_page + 1)]
@@ -124,12 +124,16 @@ class JobCrawler:
             await self.browser_init()
 
         url: str = f"https://www.zhipin.com/job_detail/{job_id}.html"
-        await self.page.goto(url)
-        html = await self.page.content()
-        if "当前 IP 地址可能存在异常访问行为，完成验证后即可正常使用." not in html:
-            await self.page.wait_for_selector('.job-sec-text', timeout=15000)
-        else:
-            print("当前 IP 地址可能存在异常访问行为，完成验证后即可正常使用.")
+        try:
+            await self.page.goto(url)
+            html = await self.page.content()
+            if "当前 IP 地址可能存在异常访问行为，完成验证后即可正常使用." not in html:
+                await self.page.wait_for_selector('.job-sec-text', timeout=15000)
+            else:
+                print("当前 IP 地址可能存在异常访问行为，完成验证后即可正常使用.")
+        except Exception as e:
+            print(f"元素未出现或等待超时: {e}")
+            return '', '', '', '', ''
 
         soup = BeautifulSoup(html, 'html.parser')
         job_description_detail = soup.find('div', class_='job-sec-text').get_text(separator='\n') if soup.find('div',
@@ -147,8 +151,8 @@ class JobCrawler:
             await self.browser_init()
 
         url: str = f"https://www.zhipin.com/gongsi/{company_id}.html"
-        await self.page.goto(url)
         try:
+            await self.page.goto(url)
             await self.page.wait_for_selector('.business-detail', timeout=30000)
         except:
             await self.page.screenshot(path=f"./logs/error_{company_id}_{time.time()}.png", full_page=True)
