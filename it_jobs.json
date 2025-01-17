@@ -1,0 +1,690 @@
+[
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": "Java",
+        "jos_code": 100101
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": "C/C++",
+        "jos_code": 100102
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": "PHP",
+        "jos_code": 100103
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": "Python",
+        "jos_code": 100109
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": "C#",
+        "jos_code": 100106
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": ".NET",
+        "jos_code": 100107
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": "Golang",
+        "jos_code": 100116
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": "Node.js",
+        "jos_code": 100114
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": "语音/视频/图形开发",
+        "jos_code": 100121
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": "GIS工程师",
+        "jos_code": 100124
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": "区块链工程师",
+        "jos_code": 100125
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": "全栈工程师",
+        "jos_code": 100123
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "后端开发",
+        "subLevel_code": 1000020,
+        "jos": "其他后端开发",
+        "jos_code": 100199
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "前端/移动开发",
+        "subLevel_code": 1000030,
+        "jos": "前端开发工程师",
+        "jos_code": 100901
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "前端/移动开发",
+        "subLevel_code": 1000030,
+        "jos": "Android",
+        "jos_code": 100202
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "前端/移动开发",
+        "subLevel_code": 1000030,
+        "jos": "iOS",
+        "jos_code": 100203
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "前端/移动开发",
+        "subLevel_code": 1000030,
+        "jos": "U3D",
+        "jos_code": 100209
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "前端/移动开发",
+        "subLevel_code": 1000030,
+        "jos": "UE4",
+        "jos_code": 100211
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "前端/移动开发",
+        "subLevel_code": 1000030,
+        "jos": "Cocos",
+        "jos_code": 100210
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "前端/移动开发",
+        "subLevel_code": 1000030,
+        "jos": "技术美术",
+        "jos_code": 100212
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "前端/移动开发",
+        "subLevel_code": 1000030,
+        "jos": "JavaScript",
+        "jos_code": 100208
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "前端/移动开发",
+        "subLevel_code": 1000030,
+        "jos": "鸿蒙开发工程师",
+        "jos_code": 100213
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "测试",
+        "subLevel_code": 1000040,
+        "jos": "测试工程师",
+        "jos_code": 100301
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "测试",
+        "subLevel_code": 1000040,
+        "jos": "软件测试",
+        "jos_code": 100309
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "测试",
+        "subLevel_code": 1000040,
+        "jos": "自动化测试",
+        "jos_code": 100302
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "测试",
+        "subLevel_code": 1000040,
+        "jos": "功能测试",
+        "jos_code": 100303
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "测试",
+        "subLevel_code": 1000040,
+        "jos": "测试开发",
+        "jos_code": 100305
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "测试",
+        "subLevel_code": 1000040,
+        "jos": "硬件测试",
+        "jos_code": 100308
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "测试",
+        "subLevel_code": 1000040,
+        "jos": "游戏测试",
+        "jos_code": 100307
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "测试",
+        "subLevel_code": 1000040,
+        "jos": "性能测试",
+        "jos_code": 100304
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "测试",
+        "subLevel_code": 1000040,
+        "jos": "渗透测试",
+        "jos_code": 100310
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "测试",
+        "subLevel_code": 1000040,
+        "jos": "测试经理",
+        "jos_code": 100703
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "运维/技术支持",
+        "subLevel_code": 1000050,
+        "jos": "运维工程师",
+        "jos_code": 100401
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "运维/技术支持",
+        "subLevel_code": 1000050,
+        "jos": "IT技术支持",
+        "jos_code": 100405
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "运维/技术支持",
+        "subLevel_code": 1000050,
+        "jos": "网络工程师",
+        "jos_code": 100403
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "运维/技术支持",
+        "subLevel_code": 1000050,
+        "jos": "网络安全",
+        "jos_code": 100407
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "运维/技术支持",
+        "subLevel_code": 1000050,
+        "jos": "系统工程师",
+        "jos_code": 100404
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "运维/技术支持",
+        "subLevel_code": 1000050,
+        "jos": "运维开发工程师",
+        "jos_code": 100402
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "运维/技术支持",
+        "subLevel_code": 1000050,
+        "jos": "系统管理员",
+        "jos_code": 100406
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "运维/技术支持",
+        "subLevel_code": 1000050,
+        "jos": "DBA",
+        "jos_code": 100409
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "运维/技术支持",
+        "subLevel_code": 1000050,
+        "jos": "电脑/打印机维修",
+        "jos_code": 290166
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "运维/技术支持",
+        "subLevel_code": 1000050,
+        "jos": "系统安全",
+        "jos_code": 100408
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "运维/技术支持",
+        "subLevel_code": 1000050,
+        "jos": "技术文档工程师",
+        "jos_code": 100410
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "图像算法",
+        "jos_code": 101306
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "自然语言处理算法",
+        "jos_code": 100117
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "大模型算法",
+        "jos_code": 101310
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "数据挖掘",
+        "jos_code": 100104
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "规控算法",
+        "jos_code": 101311
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "SLAM算法",
+        "jos_code": 101312
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "推荐算法",
+        "jos_code": 100118
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "搜索算法",
+        "jos_code": 100115
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "语音算法",
+        "jos_code": 101305
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "风控算法",
+        "jos_code": 101309
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "算法研究员",
+        "jos_code": 101307
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "算法工程师",
+        "jos_code": 100120
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "机器学习",
+        "jos_code": 101301
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "深度学习",
+        "jos_code": 101302
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "自动驾驶系统工程师",
+        "jos_code": 101308
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "人工智能",
+        "subLevel_code": 1000130,
+        "jos": "数据标注/AI训练师",
+        "jos_code": 130121
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "销售技术支持",
+        "subLevel_code": 1000140,
+        "jos": "售前技术支持",
+        "jos_code": 101201
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "销售技术支持",
+        "subLevel_code": 1000140,
+        "jos": "售后技术支持",
+        "jos_code": 101202
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "销售技术支持",
+        "subLevel_code": 1000140,
+        "jos": "销售技术支持",
+        "jos_code": 101299
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "销售技术支持",
+        "subLevel_code": 1000140,
+        "jos": "客户成功",
+        "jos_code": 160303
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "数据",
+        "subLevel_code": 1000060,
+        "jos": "数据分析师",
+        "jos_code": 100511
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "数据",
+        "subLevel_code": 1000060,
+        "jos": "数据开发",
+        "jos_code": 100508
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "数据",
+        "subLevel_code": 1000060,
+        "jos": "数据仓库",
+        "jos_code": 100507
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "数据",
+        "subLevel_code": 1000060,
+        "jos": "ETL工程师",
+        "jos_code": 100506
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "数据",
+        "subLevel_code": 1000060,
+        "jos": "数据挖掘",
+        "jos_code": 100104
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "数据",
+        "subLevel_code": 1000060,
+        "jos": "数据架构师",
+        "jos_code": 100512
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "数据",
+        "subLevel_code": 1000060,
+        "jos": "爬虫工程师",
+        "jos_code": 100514
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "数据",
+        "subLevel_code": 1000060,
+        "jos": "数据采集",
+        "jos_code": 100122
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "数据",
+        "subLevel_code": 1000060,
+        "jos": "数据治理",
+        "jos_code": 100515
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "技术项目管理",
+        "subLevel_code": 1000070,
+        "jos": "项目经理/主管",
+        "jos_code": 100601
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "技术项目管理",
+        "subLevel_code": 1000070,
+        "jos": "项目助理",
+        "jos_code": 100603
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "技术项目管理",
+        "subLevel_code": 1000070,
+        "jos": "项目专员",
+        "jos_code": 100604
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "技术项目管理",
+        "subLevel_code": 1000070,
+        "jos": "实施工程师",
+        "jos_code": 100606
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "技术项目管理",
+        "subLevel_code": 1000070,
+        "jos": "实施顾问",
+        "jos_code": 100605
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "技术项目管理",
+        "subLevel_code": 1000070,
+        "jos": "需求分析工程师",
+        "jos_code": 100607
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "技术项目管理",
+        "subLevel_code": 1000070,
+        "jos": "硬件项目经理",
+        "jos_code": 100817
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "高端技术职位",
+        "subLevel_code": 1000120,
+        "jos": "技术经理",
+        "jos_code": 100701
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "高端技术职位",
+        "subLevel_code": 1000120,
+        "jos": "架构师",
+        "jos_code": 100704
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "高端技术职位",
+        "subLevel_code": 1000120,
+        "jos": "技术总监",
+        "jos_code": 100702
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "高端技术职位",
+        "subLevel_code": 1000120,
+        "jos": "CTO/CIO",
+        "jos_code": 100705
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "高端技术职位",
+        "subLevel_code": 1000120,
+        "jos": "技术合伙人",
+        "jos_code": 100707
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "高端技术职位",
+        "subLevel_code": 1000120,
+        "jos": "运维总监",
+        "jos_code": 100706
+    },
+    {
+        "position": "互联网/AI",
+        "position_code": 1010000,
+        "subLevel": "其他技术职位",
+        "subLevel_code": 1000150,
+        "jos": "其他技术职位",
+        "jos_code": 101101
+    }
+]
