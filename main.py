@@ -100,7 +100,7 @@ async def insert_job_to_db(city=101010100, job_crawler: JobCrawler = None, all_p
                     await db.insert_data("job_postings", sample_job, check_fields=["job_id"])
 
                 except Exception as e:
-                    print(f"{job['encryptBrandId']}  {f"https://www.zhipin.com/gongsi/{job['encryptBrandId']}.html"} 公司信息解析失败，错误信息：{e}")
+                    print(f"{job['encryptBrandId']}(https://www.zhipin.com/gongsi/{job['encryptBrandId']}.html) 公司信息解析失败，错误信息：{e}")
 
     await db.close_pool()
 
