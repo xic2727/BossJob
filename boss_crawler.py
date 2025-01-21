@@ -1,4 +1,5 @@
 import asyncio
+import re
 import time
 from typing import List
 from playwright.async_api import async_playwright, Response
@@ -119,12 +120,31 @@ class JobCrawler:
             js = f.read()
         await self.page.add_init_script(js)
 
+        # 定义请求处理函数
+
+    async def handle_route(self, route):
+        # 获取请求URL
+        request = route.request
+        url = request.url
+
+        # 检查是否为图片请求
+        image_patterns = [r'\.jpg$', r'\.jpeg$', r'\.png$', r'\.gif$', r'\.webp$']
+        is_image = any(re.search(pattern, url, re.IGNORECASE) for pattern in image_patterns)
+
+        if is_image:
+            # print(f"已拦截普通图片: {url}")
+            await route.abort()
+        else:
+            # 非图片请求直接放行
+            await route.continue_()
+
     async def get_job_detail(self, job_id: str):
         if not self.page:
             await self.browser_init()
 
         url: str = f"https://www.zhipin.com/job_detail/{job_id}.html"
         try:
+            await self.page.route("**/*", self.handle_route)
             await self.page.goto(url)
             html = await self.page.content()
             if "当前 IP 地址可能存在异常访问行为，完成验证后即可正常使用." not in html:
@@ -137,12 +157,15 @@ class JobCrawler:
 
         soup = BeautifulSoup(html, 'html.parser')
         job_description_detail = soup.find('div', class_='job-sec-text').get_text(separator='\n') if soup.find('div',
-                                                                                                   class_='job-sec-text') else ''
+                                                                                                               class_='job-sec-text') else ''
         location_address = soup.find('div', class_='location-address').get_text() if soup.find('div',
-                                                                                                class_='location-address') else ''
-        company_size = soup.find('i', class_='icon-scale').parent.get_text() if soup.find('i', class_='icon-scale') else ''
-        company_stage = soup.find('i', class_='icon-stage').parent.get_text() if soup.find('i', class_='icon-stage') else ''
-        company_industry = soup.select_one('a[ka="job-detail-brandindustry"]').get_text() if soup.select_one('a[ka="job-detail-brandindustry"]') else ''
+                                                                                               class_='location-address') else ''
+        company_size = soup.find('i', class_='icon-scale').parent.get_text() if soup.find('i',
+                                                                                          class_='icon-scale') else ''
+        company_stage = soup.find('i', class_='icon-stage').parent.get_text() if soup.find('i',
+                                                                                           class_='icon-stage') else ''
+        company_industry = soup.select_one('a[ka="job-detail-brandindustry"]').get_text() if soup.select_one(
+            'a[ka="job-detail-brandindustry"]') else ''
         # soup.find('a', attrs={'ka': 'job-detail-brandindustry'})
         return job_description_detail, location_address, company_size, company_stage, company_industry
 
@@ -206,8 +229,6 @@ class JobCrawler:
             'work_tag': ','.join(work_tag),
             'job_update_time': update_time.replace('职位列表第一个职位更新时间:', '')
         }
-
-
 
     async def close(self):
         if self.browser:
