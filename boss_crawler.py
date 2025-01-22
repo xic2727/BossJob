@@ -37,7 +37,10 @@ class BossCrawler:
             viewport={'width': 1920, 'height': 1080},
             java_script_enabled=True,
             has_touch=True,
-            locale='zh-CN'
+            locale='zh-CN',
+            extra_http_headers = {
+                "referer": "https://www.zhipin.com"
+            }
         )
         await context.grant_permissions(['geolocation'])
 
@@ -79,9 +82,7 @@ class BossCrawler:
                 self.page.on("response", self.handle_response)
                 await self.page.goto(url)
                 html = await self.page.content()
-                if "当前 IP 地址可能存在异常访问行为，完成验证后即可正常使用." not in html:
-                    await self.page.wait_for_selector('.job-sec-text', timeout=15000)
-                else:
+                if "当前 IP 地址可能存在异常访问行为，完成验证后即可正常使用." in html:
                     print("当前 IP 地址可能存在异常访问行为，完成验证后即可正常使用.")
                     break
                 await self.page.wait_for_selector('.job-list-box', timeout=10000)
@@ -117,7 +118,10 @@ class JobCrawler:
             viewport={'width': 1920, 'height': 1080},
             java_script_enabled=True,
             has_touch=True,
-            locale='zh-CN'
+            locale='zh-CN',
+            extra_http_headers={
+                "referer": "https://www.zhipin.com"
+            }
         )
         await context.grant_permissions(['geolocation'])
 
