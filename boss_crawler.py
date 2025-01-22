@@ -78,6 +78,12 @@ class BossCrawler:
 
                 self.page.on("response", self.handle_response)
                 await self.page.goto(url)
+                html = await self.page.content()
+                if "当前 IP 地址可能存在异常访问行为，完成验证后即可正常使用." not in html:
+                    await self.page.wait_for_selector('.job-sec-text', timeout=15000)
+                else:
+                    print("当前 IP 地址可能存在异常访问行为，完成验证后即可正常使用.")
+                    break
                 await self.page.wait_for_selector('.job-list-box', timeout=10000)
                 if self.jobs:
                     # print(self.jobs[-1])
