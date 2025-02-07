@@ -32,6 +32,8 @@ sample_job = {
     "source_url": ""
 }
 
+job_count = 0
+
 # db = MySQLUtils()
 db = AsyncMySQLUtils()
 
@@ -98,6 +100,8 @@ async def insert_job_to_db(city=101010100, job_crawler: JobCrawler = None, all_p
                     sample_job.update(company_detail)
 
                     await db.insert_data("job_postings", sample_job, check_fields=["job_id"])
+                    global job_count
+                    job_count += 1
 
                 except Exception as e:
                     print(f"{job['encryptBrandId']}(https://www.zhipin.com/gongsi/{job['encryptBrandId']}.html) 公司信息解析失败，错误信息：{e}")
@@ -109,3 +113,8 @@ if __name__ == '__main__':
     job_crawler = JobCrawler()
     # 广州
     asyncio.run(insert_job_to_db(city=101280100, job_crawler=job_crawler, all_page=False))
+    print("*" * 50)
+    print("*" * 50)
+    print(f"共获取{job_count}个岗位")
+    print("*" * 50)
+    print("*" * 50)
