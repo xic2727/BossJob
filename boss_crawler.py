@@ -67,7 +67,7 @@ class BossCrawler:
     async def get_jobs(self):
         await self.browser_init()
         if self.all_page is False:
-            self.max_page = 3
+            self.max_page = 2
             url_list = [self.url + str(page) for page in range(1, self.max_page + 1)]
         else:
             url_list = [self.url + str(page) for page in range(1, self.max_page + 1)]

@@ -39,7 +39,7 @@ db = AsyncMySQLUtils()
 
 
 async def insert_job_to_db(city=101010100, job_crawler: JobCrawler = None, all_page=False):
-    with open('it_jobs.json', 'r') as f:
+    with open('it_jobs.json', 'r', encoding='utf-8') as f:
         jobs_code = json.load(f)
         for job_code in jobs_code:
             print(f"正在获取{job_code['position']}-{job_code['subLevel']}-{job_code['jos']}({job_code['jos_code']})岗位招聘信息...")
@@ -109,12 +109,22 @@ async def insert_job_to_db(city=101010100, job_crawler: JobCrawler = None, all_p
     await db.close_pool()
 
 
-if __name__ == '__main__':
+async def main():
+    cities = [
+        101010100,  # 北京
+        101020100,  # 上海
+        101210100,  # 杭州
+        101280600,  # 深圳
+        101280100   # 广州
+    ]
     job_crawler = JobCrawler()
-    # 广州
-    asyncio.run(insert_job_to_db(city=101280100, job_crawler=job_crawler, all_page=False))
+    tasks = [insert_job_to_db(city=city, job_crawler=job_crawler, all_page=False) for city in cities]
+    await asyncio.gather(*tasks)
     print("*" * 50)
     print("*" * 50)
     print(f"共获取{job_count}个岗位")
     print("*" * 50)
     print("*" * 50)
+
+if __name__ == '__main__':
+    asyncio.run(main())
