@@ -51,9 +51,6 @@ async def insert_job_to_db(city=101010100, job_crawler: JobCrawler = None, all_p
                 print(f"正在获取{job['jobName']} (https://www.zhipin.com/job_detail/{job['encryptJobId']}.html)岗位招聘信息...")
                 sample_job['job_id'] = job['encryptJobId']
 
-                if await db.check_duplicate("job_postings", {"job_id": job['encryptJobId']}):
-                    print(f"{job['jobName']}  {job['brandName']} 岗位招聘信息已存在，跳过...")
-                    continue
 
                 sample_job['job_title'] = job['jobName']
                 sample_job['job_category_1'] = job_code['position']

@@ -16,7 +16,7 @@ USE jobs_db;
 -- 创建职位信息表
 CREATE TABLE job_postings (
     id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '职位ID',
-    job_id VARCHAR(100) NOT NULL COMMENT '职位编号',
+    job_id VARCHAR(100) NOT NULL UNIQUE COMMENT '职位编号',
     job_title VARCHAR(100) NOT NULL COMMENT '职位名称',
     job_category_1 VARCHAR(100) COMMENT '职位大类',
     job_category_2 VARCHAR(100) COMMENT '职位二类',

@@ -328,11 +328,6 @@ class AsyncMySQLUtils:
             async with self.pool.acquire() as conn:
                 async with conn.cursor(aiomysql.DictCursor) as cursor:
                     # 如果指定了查重字段，先进行查重
-                    if check_fields:
-                        check_data = {k: data[k] for k in check_fields if k in data}
-                        if await self.check_duplicate(table, check_data):
-                            print("Duplicate record found, skipping insertion")
-                            return False
 
                     columns = ", ".join(data.keys())
                     placeholders = ", ".join(["%s"] * len(data))
@@ -343,7 +338,12 @@ class AsyncMySQLUtils:
                     print("Data inserted successfully")
                     return True
 
+        except aiomysql.IntegrityError:
+            # Catch the specific error for duplicate entry
+            print(f"Duplicate entry found for job_id: {data.get('job_id')}, skipping insertion")
+            return False
         except Exception as e:
+            # Catch other potential errors during insertion
             print(f"Error inserting data: {e}")
             return False
 
