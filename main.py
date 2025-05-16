@@ -108,10 +108,10 @@ async def insert_job_to_db(city=101010100, job_crawler: JobCrawler = None, all_p
 
 async def main():
     cities = [
-        101010100,  # 北京
-        101020100,  # 上海
-        101210100,  # 杭州
-        101280600,  # 深圳
+        # 101010100,  # 北京
+        # 101020100,  # 上海
+        # 101210100,  # 杭州
+        # 101280600,  # 深圳
         101280100   # 广州
     ]
     job_crawler = JobCrawler()
